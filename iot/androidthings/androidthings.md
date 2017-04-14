@@ -24,7 +24,7 @@
 + ###### 不支持运行时权限请求和Notifications通知
 + ###### 只支持一个应用（具有home activity）在前台接收输入事件
 + ###### 显示可选（有屏幕时显示为一个全屏的应用，可以使用通用android的ui工具包进行ui设计）
-+ ###### 当前preview2版本还不支持weave和蓝牙功能
++ ###### 当前preview2版本还不支持weave和蓝牙功能(<small><small><small><small>当前已发布了preview3支持了蓝牙和usb主机功能</small></small></small></small>)
 
 
 ---

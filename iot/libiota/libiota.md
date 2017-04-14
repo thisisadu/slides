@@ -81,7 +81,7 @@
 ---
 ###### 设备Schema文件格式
 <small><small>git clone https://weave.googlesource.com/weave/schema 
-当前支持的设备的schema文件，由于需要一些权限不下来（libiota可以下载下来)，所以具体的schema文件格式还不知道，但libiota内有已经生成好的.c／.h文件可以直接编译使用</small></small>
+当前支持的设备的schema文件，由于需要一些权限下不下来（libiota可以下载下来)，所以具体的schema文件格式还不知道，但libiota内有已经生成好的.c／.h文件可以直接编译使用</small></small>
 + <small><small>每一个支持的设备类型生成一对.c/.h文件，生成的接口以设备名为前缀</small></small>
 	- <small><small><small>创建设备/销毁设备/获取设备traits个数/获取指定trait接口</small></small></small>
 + <small><small>每一个支持的trait生成一对.c/.h文件，生成的接口以trait名为前缀</small></small>
@@ -179,7 +179,7 @@ mkdir -p ~/.iota -m 0700
 1. 创建设备[LightDevice/OutletDevice/...]
   	+ 设置各个trait的命令回调函数
   	+ 设置各个state初值
-2. 创建并启动daemon，daemon会以一个子线程运行并等待并处理各种消息
+2. 创建并启动daemon，daemon会以一个子线程运行并等待处理各种消息
   	+ `注册消息`－收到后向weave server 注册
   	+ `网络事件监听消息`－处理网络变化通知
   	+ `应用消息`－该消息主要使用户线程能向daemon线程投递一些任务，比如更改trait的state
